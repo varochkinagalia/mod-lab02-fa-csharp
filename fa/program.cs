@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace fans
 {
   public class State
@@ -12,8 +11,6 @@ namespace fans
     public Dictionary<char, State> Transitions;
     public bool IsAcceptState;
   }
-
-
   public class FA1
   {
     public bool? Run(IEnumerable<char> s)
@@ -21,7 +18,6 @@ namespace fans
       return false;
     }
   }
-
   public class FA2
   {
     public bool? Run(IEnumerable<char> s)
@@ -29,7 +25,6 @@ namespace fans
       return false;
     }
   }
-  
   public class FA3
   {
     public bool? Run(IEnumerable<char> s)
@@ -37,7 +32,6 @@ namespace fans
       return false;
     }
   }
-
   class Program
   {
     static void Main(string[] args)
