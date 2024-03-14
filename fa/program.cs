@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace fans
 {
   public class State
@@ -48,9 +47,7 @@ namespace fans
           Transitions = new Dictionary<char, State>(),
           IsAcceptState = false
       };
-
       State InitialState = a;
-
       public FA1()
       {
           a.Transitions['0'] = b;
@@ -68,9 +65,6 @@ namespace fans
           e.Transitions['0'] = e;
           e.Transitions['1'] = e;
       }
-
-      
-
       public bool? Run(IEnumerable<char> s)
       {
           State current = InitialState;
@@ -129,12 +123,7 @@ namespace fans
 
           d.Transitions['0'] = b;
           d.Transitions['1'] = c;
-
-          
       }
-
-
-
       public bool? Run(IEnumerable<char> s)
       {
           State current = InitialState;
@@ -185,9 +174,6 @@ namespace fans
           c.Transitions['1'] = c;
 
       }
-
-
-
       public bool? Run(IEnumerable<char> s)
       {
           State current = InitialState;
